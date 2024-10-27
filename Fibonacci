@@ -1,0 +1,17 @@
+n = int(input("Enter an integer number:"))
+
+if n < 0:
+    print("Enter a positive integer.")
+else:
+    a = 0
+    b = 1
+
+fibonacci_sequence = []   
+
+for i in range(n):
+    fibonacci_sequence(a)
+    next_fibonacci = a + b
+    a = b
+    b = next_fibonacci
+
+print(f"The first {n} Fibonacci numbers are: {fibonacci_sequence}")
